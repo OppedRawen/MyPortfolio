@@ -21,7 +21,7 @@ function App() {
       github: 'https://github.com/OppedRawen/MovieSearch'
     },{
       title: "ImageGenerator(Coming Up)",
-      thumbnail: '',
+      thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
       description: 'A MERN stack application that utilize AI integration to generate Image ',
       technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
       github: '#'
@@ -89,6 +89,25 @@ function App() {
           <div className=" w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg dark:shadow-gray-900 cursor-pointer">
             <img src={project.thumbnail} alt={project.title} className="w-full"></img>
 
+            <div className=" flex rounded-lg justify-center items-center transition-all duration-700 opacity-0 bg-gradient-to-t from-[#222222] via-slate-600 to-opacity-30 group-hover:opacity-90 absolute top-0 left-0 h-full w-full">
+              <div className="absolute top left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
+                <div className="flex-row text-center p-6">
+                  <h3 className="mb-2 font-semibold text-sky-200 text-2xl uppercase drop-shadow-md tracking-tighter">{project.title}</h3>
+                  <p className="text-white text-sm tracking-tight leading-snug drop-shadow-md">
+                    {project.description}
+                  </p>
+                  <p className="text-sky-200 text-xs py-2">
+                    {project.technology}
+                  </p>
+                  <div className="text-center">
+                    <a href={project.url} target="_blank">
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           </div>
 
         </motion.div>
