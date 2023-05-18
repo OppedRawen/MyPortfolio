@@ -1,8 +1,32 @@
 import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
+import { useState } from "react";
+import {motion} from 'framer-motion';
 // import profileImage from '../public/1682471997680.jpg';
 import './App.css';
 
 function App() {
+  const projects = [
+    {
+      title: "QuickCart Ecommerce",
+      thumbnail: 'Ecommerce.png',
+      description: 'A full stack ecommerce application built with an MVC design pattern and Stripe for payment integration ',
+      technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
+      github: 'https://github.com/OppedRawen/Marketplace-application'
+    },
+    {
+      title: "MovieSearcher",
+      thumbnail: 'Screenshot_20230213_072015.png',
+      description: 'A frontend application that display movie reviews, trailers, and articles related using OMDB, youtube, and New York Times API ',
+      technology: 'Javascript/html/css/Jquery/Bulma',
+      github: 'https://github.com/OppedRawen/MovieSearch'
+    },{
+      title: "ImageGenerator(Coming Up)",
+      thumbnail: '',
+      description: 'A MERN stack application that utilize AI integration to generate Image ',
+      technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
+      github: '#'
+    }
+  ]
   return (
     <div className=" bg-white px-10">
       <header className=" min-h-screen">
@@ -30,6 +54,7 @@ function App() {
       </div>
       </header>
 
+      <div className="Project"></div>
       
     </div>
   );
