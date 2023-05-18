@@ -1,5 +1,5 @@
 import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
-
+// import profileImage from '../public/1682471997680.jpg';
 import './App.css';
 
 function App() {
@@ -19,10 +19,11 @@ function App() {
 
         <div className=' text-center p-10'>
         <h2 className=' text-5xl py-2 text-teal-600 font-medium'>David Yu</h2>
+        <img className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden" src="1682471997680.jpg" alt="profileImage"></img>
         <h3 className=' text-2xl py-2'>Full stack Developer</h3>
         <p className='text-md py-5 leading-8 text-gray-800'>hello im a full stack developer</p>
       </div>
-      <div className=" text-5xl justify-center gap-16 py-3 text-gray-600">
+      <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600">
         <AiFillGithub />
         <AiFillLinkedin />
         <AiOutlineMail />
