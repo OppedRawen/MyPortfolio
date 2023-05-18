@@ -26,7 +26,32 @@ function App() {
       technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
       github: '#'
     }
-  ]
+  ];
+  const animateProject = {
+    hidden: { opacity: 0, y: 50 },
+    animate: {
+        opacity: 1, 
+        y: 0,
+        transition: {
+            delay: 0.75,
+            duration: 0.4,
+            type: 'tween',
+            delayChildren: 0.5,
+            staggerChildren: 0.4
+        }
+    }
+  };
+  const animateProjectItem = {
+    hidden: { opacity: 0, y: 50 },
+    animate: { 
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.4,
+            type: 'tween'
+        }
+    }
+  };
   return (
     <div className=" bg-white px-10">
       <header className=" min-h-screen">
@@ -54,7 +79,21 @@ function App() {
       </div>
       </header>
 
-      <div className="Project"></div>
+      <section id="projects" className=" text-3xl py-2 text-gray-500 font-medium text-center">
+        <h2>Projects</h2>
+      </section>
+      <motion.div className="w-full grid md:grid-cols-2 gap-8" variants={animateProject} initial="hidden" whileInView="animate" viewport={{once:true}}>
+      {projects.map((project)=>(
+        <motion.div key={project} className=" relative group" variants={animateProjectItem} viewport={{once:true}}>
+
+          <div className=" w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg dark:shadow-gray-900 cursor-pointer">
+            <img src={project.thumbnail} alt={project.title} className="w-full"></img>
+
+          </div>
+
+        </motion.div>
+      ))}
+      </motion.div>
       
     </div>
   );
