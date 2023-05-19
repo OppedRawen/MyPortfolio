@@ -1,7 +1,9 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created using React and Tailwind
 
+# Deplayed Application
+  
 ## Available Scripts
 
 In the project directory, you can run:
