@@ -4,6 +4,7 @@ import {motion} from 'framer-motion';
 // import profileImage from '../public/1682471997680.jpg';
 import './App.css';
 
+import Skills from './skills';
 function App() {
   const projects = [
     {
@@ -24,6 +25,13 @@ function App() {
       thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
       description: 'A MERN stack application that utilize AI integration to generate Image ',
       technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
+      github: '#'
+    },
+    {
+      title: "SpotifyClone(Coming up)",
+      thumbnail: 'SpotifyClone.png',
+      description: 'A MERN stack application that uses RapidAPI to load popular music as well as charting system ',
+      technology: 'ReactJS/MongoDB/Tailwind/ExpressJS/',
       github: '#'
     }
   ];
@@ -116,7 +124,7 @@ I hold a major in Computer Science and have a particular interest in the collabo
 
 While my professional passions lie in the realm of technology and programming, my personal interests provide a balanced contrast. In my leisure time, I engage in activities such as skateboarding and baking, which offer a refreshing change of pace from my technical pursuits.</p>
       </div>
-      <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600">
+      <div className=" text-5xl flex justify-center gap-16 py-3 pb-8 text-gray-600">
         <a href="https://github.com/OppedRawen"><AiFillGithub /></a>
         
         <a href='https://www.linkedin.com/in/dawei-yu-578138227/'><AiFillLinkedin /></a>
@@ -124,19 +132,26 @@ While my professional passions lie in the realm of technology and programming, m
       </div>
       </header>
 
+      <Skills />
 
       <section id="experience" className="max-w-screen-md m-auto md:pl-20 px-8 py-24 sm:py-32">
         <h2 className="text-3xl py-2 text-gray-500 font-medium text-center">Experience</h2>
         {experience.map((data)=>(
-          <div className=" flex flex-col md:flex-row relative border-l border-stone-300">
+          <ol>
+            <li>
+
+            <p className=" flex flex-col md:flex-row relative border-l border-stone-300">
               <span className="inline-blox py-1 px-2 mr-4 font-medium text-white bg-gray-600 rounded-md">{data.duration}</span>
               <span className="mr-1 text-base md:text-lg font-medium text-slate-400">{data.company}</span>
               <p>{data.title}</p>
-
+              </p>
               <p className="my-2 font-normal">
                 {data.description()}
               </p>
-          </div>
+            </li>
+          </ol>
+         
+          
           
          
         ))}
