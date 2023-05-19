@@ -108,15 +108,15 @@ Event planning and coordination with general managers for food promotionsSupervi
         <nav className=' py-10 mb-12 flex justify-between'>
       <h1 className=' text-xl font-burtons'>Portfolio</h1>
       <ul className=' flex items-center'>
-          <li className=' ml-8 mr-8'>About Me</li>
-          <li className=' ml-8 mr-8'>Projects</li>
-          <li className=' ml-8 mr-8'>Contact</li>
+          <li className=' ml-8 mr-8'><a href="#about">About Me</a></li>
+          <li className=' ml-8 mr-8'><a href="#projects">Projects</a></li>
+          <li className=' ml-8 mr-8'><a href="#">Contact</a></li>
          
           <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
         </ul>
         </nav>
 
-        <div className=' text-center p-10'>
+        <div id="about"className=' text-center p-10'>
         <h2 className=' text-5xl py-2 text-teal-700 font-medium'>David Yu</h2>
         <h3 className=' text-2xl py-2'>Full Stack Developer</h3>
         <img className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden" src="1682471997680.jpg" alt="profileImage"></img>
