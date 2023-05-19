@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 import './App.css';
 
 import Skills from './skills';
+import Footer from "./footer";
 function App() {
   const projects = [
     {
@@ -116,11 +117,11 @@ Event planning and coordination with general managers for food promotionsSupervi
         </nav>
 
         <div className=' text-center p-10'>
-        <h2 className=' text-5xl py-2 text-teal-600 font-medium'>David Yu</h2>
-        <img className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden" src="1682471997680.jpg" alt="profileImage"></img>
-        <h3 className=' text-2xl py-2'>Full stack Developer</h3>
+        <h2 className=' text-5xl py-2 text-teal-700 font-medium'>David Yu</h2>
+        <h3 className=' text-2xl py-2'>Full Stack Developer</h3>
+        <img className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden" src="1682471997680.jpg" alt="profileImage"></img>
         <p className='text-md py-5 leading-8 text-gray-800'>
-I hold a major in Computer Science and have a particular interest in the collaborative nature of creating innovative projects, as well as expanding my understanding of diverse algorithms. Concurrently, I am enriching my skill set through enrollment in an intensive coding bootcamp program, with a primary focus on full-stack development.
+I am an undergraduate student in Computer Science and have a particular interest in the collaborative nature of creating innovative projects, as well as expanding my understanding of diverse algorithms. Concurrently, I am enriching my skill set through enrollment in an intensive coding bootcamp program, with a primary focus on full-stack development.
 
 While my professional passions lie in the realm of technology and programming, my personal interests provide a balanced contrast. In my leisure time, I engage in activities such as skateboarding and baking, which offer a refreshing change of pace from my technical pursuits.</p>
       </div>
@@ -134,7 +135,7 @@ While my professional passions lie in the realm of technology and programming, m
 
       <Skills />
 
-      <section id="experience" className="max-w-screen-md m-auto md:pl-20 px-8 py-24 sm:py-32">
+      <section id="experience" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
         <h2 className="text-3xl py-2 text-gray-500 font-medium text-center">Experience</h2>
         {experience.map((data)=>(
           <ol>
@@ -160,7 +161,8 @@ While my professional passions lie in the realm of technology and programming, m
       <section id="projects" className=" text-3xl py-2 text-gray-500 font-medium text-center">
         <h2>Projects</h2>
       </section>
-      <motion.div className="w-full grid md:grid-cols-2 gap-8" variants={animateProject} initial="hidden" whileInView="animate" viewport={{once:true}}>
+      <section className=" max-w-screen-xl m-auto md:pl-20 px-8 py-24 sm:32">
+<motion.div className="w-full grid md:grid-cols-2 gap-8" variants={animateProject} initial="hidden" whileInView="animate" viewport={{once:true}}>
       {projects.map((project)=>(
         <motion.div key={project} className=" relative group" variants={animateProjectItem} viewport={{once:true}}>
 
@@ -191,7 +193,9 @@ While my professional passions lie in the realm of technology and programming, m
         </motion.div>
       ))}
       </motion.div>
+      </section>
       
+      <Footer />
     </div>
   );
 }
