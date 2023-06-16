@@ -6,6 +6,7 @@ import './App.css';
 
 import Skills from './skills';
 import Footer from "./footer";
+import {Contact} from './components';
 function App() {
   const projects = [
     {
@@ -22,18 +23,18 @@ function App() {
       technology: 'Javascript/html/css/Jquery/Bulma',
       github: 'https://github.com/OppedRawen/MovieSearch'
     },{
-      title: "ImageGenerator(Coming Up)",
+      title: "Image Generator(Coming Up)",
       thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
       description: 'A MERN stack application that utilize AI integration to generate Image ',
       technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
-      github: '#'
+      github: 'https://github.com/OppedRawen/ImageGenerator'
     },
     {
-      title: "SpotifyClone(Coming up)",
-      thumbnail: 'SpotifyClone.png',
+      title: "Urspace",
+      thumbnail: 'https://github.com/OppedRawen/urspace/raw/main/client/src/assets/screenshot.png',
       description: 'A MERN stack application that uses RapidAPI to load popular music as well as charting system ',
       technology: 'ReactJS/MongoDB/Tailwind/ExpressJS/',
-      github: '#'
+      github: 'https://github.com/OppedRawen/urspace'
     }
   ];
   const experience =[
@@ -83,11 +84,11 @@ Event planning and coordination with general managers for food promotionsSupervi
         opacity: 1, 
         y: 0,
         transition: {
-            delay: 0.75,
-            duration: 0.4,
+            delay: 0.1,
+            duration: 0.1,
             type: 'tween',
-            delayChildren: 0.5,
-            staggerChildren: 0.4
+            delayChildren: 0.2,
+            staggerChildren: 0.2
         }
     }
   };
@@ -97,7 +98,7 @@ Event planning and coordination with general managers for food promotionsSupervi
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.4,
+            duration: 0.2,
             type: 'tween'
         }
     }
@@ -195,6 +196,7 @@ While my professional passions lie in the realm of technology and programming, m
       </motion.div>
       </section>
       
+        <Contact />
       <Footer />
     </div>
   );
