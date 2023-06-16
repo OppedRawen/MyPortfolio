@@ -1,9 +1,15 @@
 # My Portfolio
 
-This project is created using React and Tailwind
+This portfolio is created using React, tailwind, and motion framer
 
 # Deplayed Application
+  https://portfoliodavid.herokuapp.com/
   
+# Future Development
+1. Contact me page
+2. Scrolling animation
+3. 3D avatar
+4. interactive elements
 ## Available Scripts
 
 In the project directory, you can run:
