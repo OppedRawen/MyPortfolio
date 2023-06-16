@@ -1,3 +1,5 @@
 import Contact from "./Contact";
-
-export {Contact};
+import Navbar from "./Navbar";
+import Experience from "./Experience";
+import Projects from "./Projects";
+export {Contact, Navbar,Experience,Projects};

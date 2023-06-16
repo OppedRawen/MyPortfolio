@@ -3,7 +3,7 @@ const Skills = ()=>{
     return(
         <section id="skills"className="relative w-full">
             <h2 className="text-3xl py-2 pb-8 text-gray-500 font-medium text-center">Technical Skills</h2>
-            <article className=" w-full sm:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
+            <article className=" w-full sm:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 text-[#cacaca]">
                 <div className="leading-loose">
                     <h3 className="text-lg md:text-xl tracking-tighter">Language</h3>
                     <p>Javascript</p>
