@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from 'framer-motion';
-import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai";
+import { AiFillGithub} from "react-icons/ai";
 import {FiExternalLink} from 'react-icons/fi';
 const Projects = () => {
     const projects = [
@@ -86,10 +86,10 @@ const Projects = () => {
                     {project.technology}
                   </p>
                   <div className="flex flex-row justify-center align-center text-center text-5xl text-gray-600">
-                    <a href={project.github} target="_blank" className="mr-10">
+                    <a href={project.github}  className="mr-10">
                     <AiFillGithub />
                     </a>
-                    <a href={project.deployed} target="_blank" className="">
+                    <a href={project.deployed} className="">
                     <FiExternalLink />
                     </a>
                   </div>
