@@ -1,7 +1,6 @@
-import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
-import { useState } from "react";
-import {motion} from 'framer-motion';
-// import profileImage from '../public/1682471997680.jpg';
+
+import React from 'react';
+
 import './App.css';
 
 import Skills from './skills';
