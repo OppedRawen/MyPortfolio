@@ -6,7 +6,7 @@ import './App.css';
 
 import Skills from './skills';
 import Footer from "./footer";
-import {Contact,Navbar,Experience,Projects,About} from './components';
+import {Contact,Navbar,Experience,Projects,About,Introduction} from './components';
 
 function App() {
 
@@ -16,8 +16,9 @@ function App() {
         <Navbar />
 
         <About />
+        
       </header>
-
+      <Introduction />
       <Skills />
 
      <Experience />

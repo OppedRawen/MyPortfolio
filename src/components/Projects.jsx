@@ -1,34 +1,39 @@
 import React from "react";
 import {motion} from 'framer-motion';
-import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
+import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai";
+import {FiExternalLink} from 'react-icons/fi';
 const Projects = () => {
     const projects = [
         {
           title: "QuickCart Ecommerce",
-          thumbnail: 'Ecommerce.png',
+          thumbnail: 'Marketplace.png',
           description: 'A full stack ecommerce application built with an MVC design pattern and Stripe for payment integration ',
           technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
-          github: 'https://github.com/OppedRawen/Marketplace-application'
+          github: 'https://github.com/OppedRawen/Marketplace-application',
+          deployed:'https://group-3-marketplace.herokuapp.com/'
         },
         {
           title: "MovieSearcher",
-          thumbnail: 'Screenshot_20230213_072015.png',
+          thumbnail: 'MovieSearch.png',
           description: 'A frontend application that display movie reviews, trailers, and articles related using OMDB, youtube, and New York Times API ',
           technology: 'Javascript/html/css/Jquery/Bulma',
-          github: 'https://github.com/OppedRawen/MovieSearch'
+          github: 'https://github.com/OppedRawen/MovieSearch',
+          deployed:'https://oppedrawen.github.io/MovieSearch/'
         },{
           title: "Image Generator(Coming Up)",
           thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
           description: 'A MERN stack application that utilize AI integration to generate Image ',
           technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
-          github: 'https://github.com/OppedRawen/ImageGenerator'
+          github: 'https://github.com/OppedRawen/ImageGenerator',
+          deployed:'https://imagegenerratee.herokuapp.com/'
         },
         {
           title: "Urspace",
           thumbnail: 'UrSpace.png',
           description: 'A MERN stack application that uses RapidAPI to load popular music as well as charting system ',
           technology: 'ReactJS/MongoDB/Tailwind/ExpressJS/',
-          github: 'https://github.com/OppedRawen/urspace'
+          github: 'https://github.com/OppedRawen/urspace',
+          deployed: 'https://urrspace.herokuapp.com/'
         }
       ];
       
@@ -80,9 +85,12 @@ const Projects = () => {
                   <p className="text-sky-200 text-xs py-2">
                     {project.technology}
                   </p>
-                  <div className="text-center text-5xl text-gray-600">
-                    <a href={project.github} target="_blank" className="">
+                  <div className="flex flex-row justify-center align-center text-center text-5xl text-gray-600">
+                    <a href={project.github} target="_blank" className="mr-10">
                     <AiFillGithub />
+                    </a>
+                    <a href={project.deployed} target="_blank" className="">
+                    <FiExternalLink />
                     </a>
                   </div>
                 </div>
