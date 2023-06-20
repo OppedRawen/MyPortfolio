@@ -4,9 +4,10 @@ const About = () => {
 
 
     return(
-        <>
-        <div id="about"className=' flex flex-col justify-start p-10 max-w-screen-xl'>
+   
+        <div id="about"className=' flex flex-col justify-center p-10 '>
 
+        <div className="max-w-screen-lg mx-auto">
         <h3 className="text-[#54d5bb]">Hi, my name is</h3>    
         <h1 className=' text-6xl py-2 text-[#cacaca] font-medium'>David Yu</h1>
         <h3 className=' text-4xl py-2 text-[#8892b0]'>Full Stack Developer</h3>
@@ -20,8 +21,9 @@ I am a full stack software engineer with a passion for technologies, I love to b
         
         <a href='https://www.linkedin.com/in/dawei-yu-578138227/'><AiFillLinkedin /></a>
         <AiOutlineMail />
+        </div>
       </div>
-      </>
+     
     )
 };
 

@@ -8,7 +8,7 @@ const Projects = () => {
           title: "QuickCart Ecommerce",
           thumbnail: 'Marketplace.png',
           description: 'A full stack ecommerce application built with an MVC design pattern and Stripe for payment integration ',
-          technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
+          technology: 'MySQL / Javascript / Handlebars / Tailwind / Express.js / Stripe',
           github: 'https://github.com/OppedRawen/Marketplace-application',
           deployed:'https://group-3-marketplace.herokuapp.com/'
         },
@@ -16,14 +16,14 @@ const Projects = () => {
           title: "MovieSearcher",
           thumbnail: 'MovieSearch.png',
           description: 'A frontend application that display movie reviews, trailers, and articles related using OMDB, youtube, and New York Times API ',
-          technology: 'Javascript/html/css/Jquery/Bulma',
+          technology: 'Javascript / Jquery / OMDB API / Youtube API / New York Times API',
           github: 'https://github.com/OppedRawen/MovieSearch',
           deployed:'https://oppedrawen.github.io/MovieSearch/'
         },{
           title: "Image Generator(Coming Up)",
           thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
           description: 'A MERN stack application that utilize AI integration to generate Image ',
-          technology: 'MySQL/Javascript/Handlebars/Tailwind/Express.js',
+          technology: 'MySQL / Javascript / Handlebars / Tailwind / Express.js',
           github: 'https://github.com/OppedRawen/ImageGenerator',
           deployed:'https://imagegenerratee.herokuapp.com/'
         },
@@ -31,7 +31,7 @@ const Projects = () => {
           title: "Urspace",
           thumbnail: 'UrSpace.png',
           description: 'A MERN stack application that uses RapidAPI to load popular music as well as charting system ',
-          technology: 'ReactJS/MongoDB/Tailwind/ExpressJS/',
+          technology: 'MERN / Redux / GraphQL / RapidAPI / Tailwind / Express.js',
           github: 'https://github.com/OppedRawen/urspace',
           deployed: 'https://urrspace.herokuapp.com/'
         }
