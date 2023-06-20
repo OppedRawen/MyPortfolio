@@ -4,9 +4,17 @@ import { AiFillGithub} from "react-icons/ai";
 import {FiExternalLink} from 'react-icons/fi';
 const Projects = () => {
     const projects = [
+      {
+        title: "Urspace",
+        thumbnail: 'UrSpace.png',
+        description: 'A  social media application that also have a music player built in that uses Shazam API for music fetching, enabling users to discover, listen to, and save music directly within the application. ',
+        technology: 'MERN / Redux / GraphQL / RapidAPI / Tailwind / Express.js',
+        github: 'https://github.com/OppedRawen/urspace',
+        deployed: 'https://urrspace.herokuapp.com/'
+      },
         {
           title: "QuickCart Ecommerce",
-          thumbnail: 'Marketplace.png',
+          thumbnail: 'ecommerceMarketplace.png',
           description: 'A full stack ecommerce application built with an MVC design pattern and Stripe for payment integration ',
           technology: 'MySQL / Javascript / Handlebars / Tailwind / Express.js / Stripe',
           github: 'https://github.com/OppedRawen/Marketplace-application',
@@ -27,14 +35,7 @@ const Projects = () => {
           github: 'https://github.com/OppedRawen/ImageGenerator',
           deployed:'https://imagegenerratee.herokuapp.com/'
         },
-        {
-          title: "Urspace",
-          thumbnail: 'UrSpace.png',
-          description: 'A MERN stack application that uses RapidAPI to load popular music as well as charting system ',
-          technology: 'MERN / Redux / GraphQL / RapidAPI / Tailwind / Express.js',
-          github: 'https://github.com/OppedRawen/urspace',
-          deployed: 'https://urrspace.herokuapp.com/'
-        }
+        
       ];
       
       const animateProject = {
@@ -64,7 +65,7 @@ const Projects = () => {
       };
     return(
         <>
-        <section id="projects" className=" text-3xl py-2 text-gray-500 font-medium text-center">
+        <section id="projects" className=" text-3xl py-2 text-gray-500 font-medium text-center ">
         <h2>Projects</h2>
       </section>
       <section className=" max-w-screen-xl m-auto md:pl-20 px-8 py-24 sm:32">
