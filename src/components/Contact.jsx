@@ -15,7 +15,7 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             console.log('message sent');
-            setVerification("Message Sent!");
+            setVerification("Message Sent!, looking forward to connecting!");
         }, (error) => {
             console.log(error.text);
             console.log('message failed');
@@ -58,7 +58,7 @@ return(
     </form>
     {verification && (
           <div className="mt-4 text-center">
-            <p>{verification}</p>
+            {window.alert(verification)}
           </div>
         )}
   </div>
