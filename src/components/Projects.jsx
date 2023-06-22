@@ -71,7 +71,7 @@ const Projects = () => {
       <section className=" max-w-screen-xl m-auto md:pl-20 px-8 py-24 sm:32">
 <motion.div className="w-full grid md:grid-cols-2 gap-8" variants={animateProject} initial="hidden" whileInView="animate" viewport={{once:true}}>
       {projects.map((project)=>(
-        <motion.div key={project} className=" relative group" variants={animateProjectItem} viewport={{once:true}}>
+        <motion.div key={project.title} className=" relative group" variants={animateProjectItem} viewport={{once:true}}>
 
           <div className=" w-full h-max aspect-auto overflow-hidden rounded-lg opacity-90 hover:opacity-100 transition-all shadow-lg dark:shadow-gray-900 cursor-pointer">
             <img src={project.thumbnail} alt={project.title} className="w-full"></img>

@@ -51,14 +51,14 @@ const Experience = () => {
           <ol>
             <li className="">
 
-            <p className=" flex flex-col md:flex-row relative border-l border-stone-300">
+            <div className=" flex flex-col md:flex-row relative border-l border-stone-300">
               <span className="inline-blox py-1 px-2 mr-4 font-medium text-white bg-gray-600 rounded-md">{data.duration}</span>
               <span className="mr-1 text-base md:text-lg font-medium text-slate-400">{data.company}</span>
               <p className="text-[#cacaca] ml-1 font-medium text-lg">{data.title}</p>
-              </p>
-              <p className="my-2 font-normal text-[#cacaca]">
+              </div>
+              <div className="my-2 font-normal text-[#cacaca]">
                 {data.description()}
-              </p>
+              </div>
             </li>
           </ol>
          

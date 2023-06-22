@@ -8,10 +8,12 @@ return(
       
       <div className="md:w-2/3 mx-6">
         <h2 className="text-[#cacaca] font-bold text-2xl">About Me</h2>
-        <p className="text-gray-400 text-lg mt-4">
-          Hello! My name is David and I enjoy creating applications live on the internet. My interest in coding began back in when I was introduced into a game development club where I discovered that  games such as Doodle Jump and Flappy Birds that I am very familiar with can be made with knowledge in programming. This inspired me to major in computer science at Irvine Valley College, where I expanded my knowledge in coding languages, applied maths, and algorithm.
+        <p className="text-gray-400 mt-4">
+          Hello! My name is David and I enjoy creating applications live on the internet. My coding journey began in high school when I joined a game development club, having no prior knowledge about what programming is. That's when I realized that games such as Doodle Jump and Flappy Bird, which I played on my phone, can be created by anyone with a computer. This discovery motivated me to pursue a major in computer science to delve deeper into the world of programming.
+       
         </p>
-        <p className="text-gray-400 mt-4 mb-10">When I'm not on my computer, I'm most likely enjoying my time at a skatepark, watching movies, and playing video games</p>
+        <p className="text-gray-400 mt-4 mb-8">To further enhance my skills and knowledge, I also enrolled into a full stack coding bootcamp. I believe that this experience will provide me with a well-rounded understanding of web development, where I can better apply my skills to create more complex applications.</p>
+        <p className="text-gray-400 mt-4 mb-8">Beyond coding, I am also passionate about skateboarding, movies, and video games. One of my favorite things to do before a coding session is to go to a skatepark to clear my mind and get some exercise.</p>
       </div>
       <div className="md:w-1/3 flex justify-center md:justify-start mt-5">
         <img src="profile.jpg" className="w-60 h-60 rounded-full" alt="profileImage"/>
