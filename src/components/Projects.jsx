@@ -28,7 +28,7 @@ const Projects = () => {
           github: 'https://github.com/OppedRawen/MovieSearch',
           deployed:'https://oppedrawen.github.io/MovieSearch/'
         },{
-          title: "Image Generator(Coming Up)",
+          title: "Image Generator",
           thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
           description: 'A MERN stack application that utilize AI integration to generate Image ',
           technology: 'MySQL / Javascript / Handlebars / Tailwind / Express.js',

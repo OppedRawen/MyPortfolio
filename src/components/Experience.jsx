@@ -5,12 +5,13 @@ const Experience = () => {
         {
           title: "Web Development Project Lead",
           company: "IVC Computer Science Club",
-          duration: "March 2023- Present",
+          duration: "January 2023- Present",
           description: ()=>(
             <ul>
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Coordinated a diverse range of web development projects, assisting club members in navigating complexities and successfully building their own web applications.</li>
-              <li className="mt-2"> <span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Organized competitive programming events, working effectively under pressure to deliver high-quality events that enhanced members' coding competencies and fostered a collaborative club culture. </li>
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span> Managed the club's budget with a keen eye for optimization, ensuring the efficient allocation of resources to meet strategic objectives and support club activities.</li>
+              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Coordinated 2 full stack development projects, gaining hands-on experience in project management and team collaboration</li>
+              <li className="mt-2"> <span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Organized competitive programming events alongside a team of 5 into preparing for challenges like Codeforces competition </li>
+              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching core concepts and the MERN stack to
+club members</li>
             </ul>
           )
         },

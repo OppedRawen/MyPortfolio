@@ -1,11 +1,18 @@
 import React from "react";
+import {motion} from "framer-motion";
 import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
 const About = () => {
 
-
+  const handleLinkClick = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
     return(
    
-        <div id="about"className=' flex flex-col justify-center p-10 '>
+        <div className=' flex flex-col justify-center p-10 '>
 
         <div className="max-w-screen-md mx-auto">
         <h3 className="text-[#54d5bb]">Hi, my name is</h3>    
@@ -16,11 +23,29 @@ const About = () => {
 I am a full stack software engineer with a passion for technologies. I love to build and design accessible web applications. 
 </p>
       </div>
-      <div className=" text-5xl flex justify-center gap-16 py-3 pb-8 text-[#cacaca]">
-        <a href="https://github.com/OppedRawen"><AiFillGithub /></a>
+      <div className=" text-5xl flex justify-center gap-16 py-3 pb-8 ">
+        {/* <a href="https://github.com/OppedRawen"><AiFillGithub /></a>
+        
+
         
         <a href='https://www.linkedin.com/in/dawei-yu-578138227/'><AiFillLinkedin /></a>
-        <AiOutlineMail />
+        <AiOutlineMail /> */}
+        <motion.a
+  href="#projects"
+  className=" text-3xl inline-block px-4 py-2 text-teal-500 border border-teal-500 bg-transparent"
+  whileTap={{ scale: 0.95 }}
+  onClick={(e) => handleLinkClick(e, "projects")}
+>
+  <span className="">Projects</span>
+</motion.a>
+<motion.a
+  href="#contact"
+  className=" text-3xl inline-block px-4 py-2 text-teal-500 border border-teal-500 bg-transparent"
+  whileTap={{ scale: 0.95 }}
+  onClick={(e) => handleLinkClick(e, "contact")}
+>
+  <span className="">Contact Me!</span>
+</motion.a>
         </div>
       </div>
      
