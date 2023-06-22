@@ -7,7 +7,7 @@ const Contact = () => {
     const [message, setMessage] = useState("");
     const [verification, setVerification] = useState("");
     const form = useRef();
-    console.log(process.env.REACT_APP_SERVICE_KEY);
+
     const sendEmail = (e) => {
       e.preventDefault();
   

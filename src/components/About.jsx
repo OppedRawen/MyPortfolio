@@ -7,7 +7,7 @@ const About = () => {
    
         <div id="about"className=' flex flex-col justify-center p-10 '>
 
-        <div className="max-w-screen-lg mx-auto">
+        <div className="max-w-screen-md mx-auto">
         <h3 className="text-[#54d5bb]">Hi, my name is</h3>    
         <h1 className=' text-6xl py-2 text-[#cacaca] font-medium'>David Yu</h1>
         <h3 className=' text-4xl py-2 text-[#8892b0]'>Full Stack Developer</h3>
