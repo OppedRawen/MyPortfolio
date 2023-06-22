@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
-import { AiFillGithub,AiFillLinkedin,AiOutlineMail} from "react-icons/ai"
+
 const About = () => {
 
   const handleLinkClick = (e, sectionId) => {

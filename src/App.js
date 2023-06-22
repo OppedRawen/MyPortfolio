@@ -5,7 +5,7 @@ import './App.css';
 
 import Skills from './skills';
 import Footer from "./footer";
-import {Contact,Navbar,Experience,Projects,About,Introduction,Sidebar} from './components';
+import {Contact,Navbar,Experience,Projects,About,Introduction} from './components';
 
 function App() {
 
