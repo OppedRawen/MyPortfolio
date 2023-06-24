@@ -1,5 +1,7 @@
 import React from "react";
 import {motion} from 'framer-motion';
+import {HiOutlineDesktopComputer} from 'react-icons/hi';
+import {FaComputer} from 'react-icons/fa';
 const Navbar = () => {
 
   const handleLinkClick = (e, sectionId) => {
@@ -29,7 +31,9 @@ const Navbar = () => {
        
   //         </nav>
   <nav className="py-10 mb-12 flex justify-between text-[#cacaca]">
-      <h1 className="text-lg font-burtons font-semibold">Portfolio</h1>
+      {/* <h1 className="text-lg font-burtons font-semibold">Portfolio</h1> */}
+      <HiOutlineDesktopComputer className="text-3xl font-bold w-10 h-10"/>
+      
       <div className="flex justify-end text-sm">
         <ul className="flex items-center">
           <li className="ml-6 mr-6 font-semibold hover:text-[#54d5bb]">

@@ -8,9 +8,9 @@ const Experience = () => {
           duration: "January 2023- Present",
           description: ()=>(
             <ul>
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Coordinated 2 full stack development projects, gaining hands-on experience in project management and team collaboration</li>
-              <li className="mt-2"> <span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Organized competitive programming events alongside a team of 5 into preparing for challenges like Codeforces competition </li>
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching core concepts and the MERN stack to
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Coordinated 2 full stack development projects, gaining hands-on experience in project management and team collaboration</li>
+              <li className="mt-2"> <span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Organized competitive programming events alongside a team of 5 into preparing for challenges like Codeforces competition </li>
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching core concepts and the MERN stack to
 club members</li>
             </ul>
           )
@@ -21,8 +21,8 @@ club members</li>
           duration: "Feburary 2023- Present",
           description: ()=>(
             <ul>
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span> Collaborated with team members to optimize kitchen workflow at one of the busiest location of Din Tai Fung, serving over 1800 customers a day.</li>
-              <li className="mt-2"> <span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Maintained high standards of quality and consistency for food and adhering to strict guidelines
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Collaborated with team members to optimize kitchen workflow at one of the busiest location of Din Tai Fung, serving over 1800 customers a day.</li>
+              <li className="mt-2"> <span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Maintained high standards of quality and consistency for food and adhering to strict guidelines
     Managed multiple tasks and priorities simultaneously to ensure timely completion of orders </li>
              
             </ul>
@@ -36,7 +36,7 @@ club members</li>
            
             <ul>
                  
-              <li className="mt-2"><span className=" inline-block text-teal-300"><IoCaretForwardOutline/></span>Supervised and trained team members, ensuring high standards of quality and services
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Supervised and trained team members, ensuring high standards of quality and services
     Managed inventory and ordered supplies to optimize stock levels and minimize waste
     Event planning and coordination with general managers for food promotionsSupervised</li>
            

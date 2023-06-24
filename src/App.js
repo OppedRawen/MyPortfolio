@@ -5,14 +5,14 @@ import './App.css';
 
 import Skills from './skills';
 import Footer from "./footer";
-import {Contact,Navbar,Experience,Projects,About,Introduction} from './components';
+import {Contact,Navbar,Experience,Projects,About,Introduction,Loading} from './components';
 
 function App() {
 
   return (
     <div className=" bg-[#1d1d20] px-10">
       <header className=" min-h-screen">
-       
+       <Loading />
         <Navbar />
        
         <About />
