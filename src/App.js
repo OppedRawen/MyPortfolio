@@ -13,7 +13,7 @@ useEffect(() => {
   // Simulating a 1-second delay before loading the main page
   const timer = setTimeout(() => {
     setIsLoading(false);
-  }, 1000);
+  }, 1500);
 
   return () => clearTimeout(timer); // Clear the timer when the component is unmounted
 }, []);
