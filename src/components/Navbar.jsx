@@ -59,7 +59,7 @@ const Navbar = () => {
           <li>
           <a
               className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-              href="https://drive.google.com/file/d/1pty0BprunZPkRqFR9s7UONoM77IRuBep/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rhmXrkVmYROLt2MUlb-ERt6tfg3YzdH6/view?usp=sharing"
               target="_blank" // Add target="_blank" to open the link in a new tab
               rel="noopener noreferrer" // Add rel="noopener noreferrer" for security reasons
             >
