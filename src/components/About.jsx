@@ -32,7 +32,7 @@ I am a full stack software engineer with a passion for technologies. I love to b
         <AiOutlineMail /> */}
         <motion.a
   href="#projects"
-  className=" text-3xl inline-block px-4 py-2 text-teal-500 border border-teal-500 bg-transparent"
+  className=" text-3xl inline-block rounded-lg px-4 py-2 text-teal-500 border border-teal-500 bg-transparent"
   whileTap={{ scale: 0.95 }}
   onClick={(e) => handleLinkClick(e, "projects")}
 >
@@ -40,7 +40,7 @@ I am a full stack software engineer with a passion for technologies. I love to b
 </motion.a>
 <motion.a
   href="#contact"
-  className=" text-3xl inline-block px-4 py-2 text-teal-500 border border-teal-500 bg-transparent"
+  className=" text-3xl inline-block px-4 py-2 rounded-lg text-teal-500 border border-teal-500 bg-transparent"
   whileTap={{ scale: 0.95 }}
   onClick={(e) => handleLinkClick(e, "contact")}
 >
