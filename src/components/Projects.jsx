@@ -21,21 +21,22 @@ const Projects = () => {
           deployed:'https://group-3-marketplace.herokuapp.com/'
         },
         {
+          title: "IVC Compsci Club Website",
+          thumbnail: 'ivcClub.png',
+          description: 'Official site for the IVC Computer Science club. A place for students to learn about the club and its events. ',
+          technology: 'React/ Tailwind / Framer Motion / React Routers',
+          github: 'https://github.com/OppedRawen/CSClub-Demo',
+          deployed:'https://ivccsclub.netlify.app/'
+        },
+        
+        {
           title: "MovieSearcher",
           thumbnail: 'MovieSearch.png',
           description: 'A frontend application that display movie reviews, trailers, and articles related using OMDB, youtube, and New York Times API ',
           technology: 'Javascript / Jquery / OMDB API / Youtube API / New York Times API',
           github: 'https://github.com/OppedRawen/MovieSearch',
           deployed:'https://oppedrawen.github.io/MovieSearch/'
-        },{
-          title: "Image Generator",
-          thumbnail: 'be195c34-7f43-4f22-896b-dac5a96e8dab.png',
-          description: 'A MERN stack application that utilize AI integration to generate Image ',
-          technology: 'MySQL / Javascript / Handlebars / Tailwind / Express.js',
-          github: 'https://github.com/OppedRawen/ImageGenerator',
-          deployed:'https://imagegenerratee.herokuapp.com/'
         },
-        
       ];
       
       const animateProject = {
