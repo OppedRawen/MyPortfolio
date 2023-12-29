@@ -38,6 +38,32 @@ const Projects = () => {
           deployed:'https://oppedrawen.github.io/MovieSearch/'
         },
       ];
+      const moreProjects = [
+        {
+          title: 'Book Search Engine',
+          description:'A book search engine that uses google search api and GraphQL',
+          technology:'React.js / GraphQL / Apollo / Express.js / Google Books API',
+          github:'https://github.com/OppedRawen/BookSearchEngine',
+        },
+        {
+          title: 'BORG',
+          description:'A c++ interpreter for the BORG programming language',
+          technology:'C++ | Object Oriented Programming | Interpreter Design Pattern',
+          github:'https://github.com/OppedRawen/BORG',
+        },
+        {
+          title: 'CreateReadme',
+          description:'A simple script that creates a readme file for your project',
+          technology:'Node.js | Javascript | Inquirer.js | File System',
+          github:'https://github.com/OppedRawen/CreateReadme',
+        },
+        {
+          title: 'CS Hub: A Chat Application(In Progress)',
+          description:'A chat application for computer science students to communicate and share resources with each other',
+          technology:'Next.js | Typescript | Redis | Tailwind',
+          github:'https://github.com/OppedRawen/upgraded-chainsaw',
+        },
+      ]
       
       const animateProject = {
         hidden: { opacity: 0, y: 50 },
