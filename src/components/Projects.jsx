@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import {motion} from 'framer-motion';
 import { AiFillGithub} from "react-icons/ai";
 import {FiExternalLink} from 'react-icons/fi';
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false);
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
     const projects = [
       {
         title: "Urspace",
@@ -129,7 +133,39 @@ const Projects = () => {
 
         </motion.div>
       ))}
+      {/* i want you to help me implement a see more project component that hides the additional projects */}
+      
       </motion.div>
+          <div className="flex flex-row justify-center">
+          <button className="pt-10 text-gray-500 text-2xl font-medium" onClick={toggleShowMore}>
+          {showMore ? 'See Less' : 'See More'}
+          </button>
+          </div>
+          {showMore && (
+                <div className="w-full grid md:grid-cols-2 gap-8 pt-8">
+                    {moreProjects.map((project) => (
+                        <motion.div 
+                            key={project.title} 
+                            className="group border rounded-lg p-4 hover:shadow-lg transition"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <h3 className="text-xl font-semibold">{project.title}</h3>
+                            <p className="text-gray-600">{project.description}</p>
+                            <p className="text-gray-500 text-sm">{project.technology}</p>
+                            
+                            <a 
+                                href={project.github} 
+                                className="text-gray-500 hover:text-gray-700 mt-2 inline-block opacity-0 group-hover:opacity-100 transition"
+                            >
+                                <AiFillGithub className="inline mr-2" />
+                                View on GitHub
+                            </a>
+                        </motion.div>
+                    ))}
+                </div>
+            )}
       </section>
       </>
     );
