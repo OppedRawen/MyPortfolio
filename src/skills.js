@@ -16,7 +16,7 @@ const Skills = ()=>{
                     <p>CSS</p>
                 </div>
                 <div className="leading-loose">
-                    <h3 className="font-bold  text-lg md:text-xl tracking-tighter">Framework/Technologies</h3>
+                    <h3 className="font-bold  text-lg md:text-xl tracking-tighter">Framework/Libaries</h3>
                     <p>ReactJS</p>
                     <p>GraphQL</p>
                     <p>NodeJS</p>
@@ -29,12 +29,17 @@ const Skills = ()=>{
                     <h3 className=" font-bold text-lg md:text-xl tracking-tighter">Database</h3>
                     <p>MySql</p>
                     <p>MongoDB</p>
+                    <p>Firebase Realtime Database</p>
+                    <p>Redis</p>
                 </div>
                 <div className="leading-loose">
                     <h3 className=" font-bold  text-lg md:text-xl tracking-tighter">Tools</h3>
                     <p>Github</p>
                     <p>Heroku</p>
                     <p>MongoDB Atlas</p>
+                    <p>VS Code</p>
+                    <p>IntelliJ</p>
+                    <p>Google Cloud Platform</p>
                     <p>Unity</p>
                 </div>
                 
