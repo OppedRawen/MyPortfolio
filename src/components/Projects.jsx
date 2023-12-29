@@ -96,7 +96,7 @@ const Projects = () => {
       };
     return(
         <>
-        <section id="projects" className=" text-3xl py-2 text-gray-500 font-medium text-center ">
+        <section id="projects" className=" text-3xl py-2 text-[#cacaca] font-medium text-center ">
         <h2>Projects</h2>
       </section>
       <section className=" max-w-screen-xl m-auto md:pl-20 px-8 py-24 sm:32">
@@ -137,7 +137,7 @@ const Projects = () => {
       
       </motion.div>
           <div className="flex flex-row justify-center">
-          <button className="pt-10 text-gray-500 text-2xl font-medium" onClick={toggleShowMore}>
+          <button className="pt-10 text-[#cacaca] text-2xl font-medium" onClick={toggleShowMore}>
           {showMore ? 'See Less' : 'See More'}
           </button>
           </div>
@@ -146,18 +146,18 @@ const Projects = () => {
                     {moreProjects.map((project) => (
                         <motion.div 
                             key={project.title} 
-                            className="group border rounded-lg p-4 hover:shadow-lg transition"
+                            className="group border bg-[#1f1f22] rounded-lg p-4 hover:shadow-lg transition"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h3 className="text-xl font-semibold">{project.title}</h3>
-                            <p className="text-gray-600">{project.description}</p>
+                            <h3 className="text-xl text-[#cacaca] font-semibold">{project.title}</h3>
+                            <p className="text-[#cacaca]">{project.description}</p>
                             <p className="text-gray-500 text-sm">{project.technology}</p>
                             
                             <a 
                                 href={project.github} 
-                                className="text-gray-500 hover:text-gray-700 mt-2 inline-block opacity-0 group-hover:opacity-100 transition"
+                                className="text-[#cacaca] hover:text-gray-700 mt-2 inline-block opacity-0 group-hover:opacity-100 transition"
                             >
                                 <AiFillGithub className="inline mr-2" />
                                 View on GitHub

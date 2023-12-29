@@ -4,15 +4,15 @@ const Experience = () => {
     const experience =[
         {
           year:"2023",
-          title: "Web Development Project Lead",
+          title: "Software Development Project Lead",
           company: "IVC Computer Science Club",
           duration: "January 2023- Present",
           description: ()=>(
             <ul>
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Developed a front-end portfolio application using React, Firebase, and Tailwind, successfully attracting company sponsorships due to its standout user interface and features</li>
               <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Coordinated 2 full stack development projects, gaining hands-on experience in project management and team collaboration</li>
               <li className="mt-2"> <span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Organized competitive programming events alongside a team of 5 into preparing for challenges like Codeforces competition </li>
-              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching core concepts and the MERN stack to
-club members</li>
+              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching web development concepts to club members</li>
             </ul>
           )
         },
