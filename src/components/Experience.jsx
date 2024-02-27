@@ -66,13 +66,13 @@ const Experience = () => {
         <section id="experience" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
         <motion.h2 initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          viewport={{ once: true }} className="text-3xl py-2 text-gray-500 font-medium text-center">Experience</motion.h2>
+          transition={{ duration: 0.4, delay: 0.75 }}
+          viewport={{ once: true }} className="text-3xl py-10 text-gray-500 font-medium text-center">Experience</motion.h2>
         {experience.map((data)=>(
           <motion.ol className="flex flex-col md:flex-row relative border-l border-stone-300"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 0.4, delay: 1 }}
           viewport={{ once: true }}>
             <li className="mb-10 ml-4"
         

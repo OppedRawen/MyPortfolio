@@ -3,7 +3,7 @@ const Skills = ()=>{
     return(
         <section id="skills"className="    ">
             <div className="flex flex-col">
-            <h2 className="text-3xl py-2 pb-8 text-gray-500 font-medium text-center ">Technical Skills</h2>
+            <h2 className="text-3xl py-2 pb-8 text-gray-500 font-medium text-center">Technical Skills</h2>
             <article className=" max-w-screen-lg sm: mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 text-[#cacaca]">
                 <div className="leading-loose">
                     <h3 className=" font-bold text-lg md:text-xl tracking-tighter">Language</h3>

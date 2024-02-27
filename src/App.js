@@ -30,8 +30,8 @@ useEffect(() => {
         <Introduction />
         <Experience />
         <Projects />
-        <Skills />
         <Contact />
+        <Skills />
         <Footer />
       </>
     )}
