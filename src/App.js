@@ -28,9 +28,9 @@ useEffect(() => {
           <About />
         </header>
         <Introduction />
-        <Skills />
         <Experience />
         <Projects />
+        <Skills />
         <Contact />
         <Footer />
       </>

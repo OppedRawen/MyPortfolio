@@ -16,7 +16,18 @@ const Navbar = () => {
 
   <nav className="py-10 mb-12 flex justify-between text-[#cacaca]">
       {/* <h1 className="text-lg font-burtons font-semibold">Portfolio</h1> */}
-      <HiOutlineDesktopComputer className="text-3xl font-bold w-10 h-10"/>
+      <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      transition={{ duration: 3, delay: 3}}
+      viewport={{once:true}}
+      >
+        <a href="/">
+        <HiOutlineDesktopComputer className="text-3xl font-bold w-10 h-10"/>  
+        </a>
+       
+      </motion.div>
+    
       
       <div className="flex justify-end text-sm">
         <ul className="flex items-center">
