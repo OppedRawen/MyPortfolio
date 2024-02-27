@@ -59,7 +59,7 @@ const Navbar = () => {
               Projects
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.75 }} viewport={{ once: true }}>
+          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.75 }} viewport={{ once: true }} className="mr-6">
             <motion.a
               href="#contact"
               whileTap={{ scale: 0.95 }}
@@ -68,9 +68,9 @@ const Navbar = () => {
               Contact
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }}>
+          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }} className="mr-6">
           <a
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
+              
               href="https://drive.google.com/file/d/1CgIuKID96dTHESQNIpPQlI4xXiv6J3iu/view?usp=sharing"
               target="_blank" // Add target="_blank" to open the link in a new tab
               rel="noopener noreferrer" // Add rel="noopener noreferrer" for security reasons
