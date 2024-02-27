@@ -32,7 +32,7 @@ const Navbar = () => {
       
         <div>
         <ul className="hidden md:flex md:items-center list-none">
-        <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
+        <motion.li initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
             <motion.a
               href="#about"
               whileTap={{ scale: 0.95 }}
@@ -42,7 +42,7 @@ const Navbar = () => {
               About Me
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
+          <motion.li initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.25 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
             <motion.a
               href="#experience"
               whileTap={{ scale: 0.95 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
               Experience
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
+          <motion.li initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.5 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
             <motion.a
               href="#projects"
               whileTap={{ scale: 0.95 }}
@@ -60,7 +60,7 @@ const Navbar = () => {
               Projects
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.75 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
+          <motion.li initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 2.75 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
             <motion.a
               href="#contact"
               whileTap={{ scale: 0.95 }}
@@ -69,7 +69,7 @@ const Navbar = () => {
               Contact
             </motion.a>
           </motion.li>
-          <motion.li initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
+          <motion.li initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 3 }} viewport={{ once: true }} className="mr-6 font-medium hover:text-emerald-400 cursor-pointer">
           <a
               
               href="https://drive.google.com/file/d/1gQf3OObUH9TczDxI3mrK6nMgi3IrJLPL/view?usp=sharing"

@@ -43,8 +43,8 @@ return(
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.75 }}
         viewport={{ once: true }}
-      className="md:w-1/3 flex justify-center md:justify-start mt-5">
-        <img src="profile.jpg" className="w-60 h-60 mt-10 rounded-md" alt="profileImage"/>
+      className=" md:w-1/3 flex justify-center md:justify-start mt-5">
+        <img src="profile.jpg" className="w-60 h-60 mt-10 rounded-lg shadow-lg opacity-70 hover:opacity-100 transition-all ease-in duration-300" alt="profileImage"/>
       </motion.div>
     </div>
   </div>
