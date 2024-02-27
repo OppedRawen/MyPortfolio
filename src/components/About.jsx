@@ -12,7 +12,7 @@ const About = () => {
   };
     return(
    
-        <div className=' flex flex-col justify-center p-10 '>
+        <div className='flex flex-col justify-center p-10 m-auto pt-12'>
 
         <div className="max-w-screen-md mx-auto">
         <motion.h3

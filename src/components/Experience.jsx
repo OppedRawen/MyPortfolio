@@ -1,15 +1,29 @@
 import React from "react";
 import {IoCaretForwardOutline} from "react-icons/io5"
+import {motion} from "framer-motion";
 const Experience = () => {
     const experience =[
+      {
+        year:"2023",
+        title: "Math Tutor",
+        company: "IVC Computer Science Club",
+        duration: "September 2023 - Present",
+        description: ()=>(
+          <ul>
+            <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Tutored high school students in mathematics, covering Geometry, Algebra, and Calculus, adapting teaching methods to individual learning styles</li>
+            <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Achieved significant improvements in students’ grades, with increases up to 30% in test scores.</li>
+            <li className="mt-2"> <span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Developed and implemented personalized lesson plans and practice tests to track progress and address areas of difficulty </li>
+       
+          </ul>
+        )
+      },
         {
           year:"2023",
-          title: "Software Development Project Lead",
+          title: "CS Club Project Lead",
           company: "IVC Computer Science Club",
-          duration: "January 2023- Present",
+          duration: "January 2023 - Present",
           description: ()=>(
             <ul>
-              <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Developed a front-end portfolio application using React, Firebase, and Tailwind, successfully attracting company sponsorships due to its standout user interface and features</li>
               <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Coordinated 2 full stack development projects, gaining hands-on experience in project management and team collaboration</li>
               <li className="mt-2"> <span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span>Organized competitive programming events alongside a team of 5 into preparing for challenges like Codeforces competition </li>
               <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Conducted and led coding workshops focused on web development, effectively teaching web development concepts to club members</li>
@@ -20,7 +34,7 @@ const Experience = () => {
           year:"2023",
           title: "Line Cook",
           company: "Din Tai Fung",
-          duration: "Feburary 2023- Present",
+          duration: "Feburary 2023 - Present",
           description: ()=>(
             <ul>
               <li className="mt-2"><span className=" inline-block text-gray-500"><IoCaretForwardOutline/></span> Collaborated with team members to optimize kitchen workflow at one of the busiest location of Din Tai Fung, serving over 1800 customers a day.</li>
@@ -34,7 +48,7 @@ const Experience = () => {
           year:"2021",
           title: "Assistant Manager",
           company: "Champion's Curry",
-          duration: "June 2021- January 2023",
+          duration: "June 2021 - January 2023",
           description: ()=>(
            
             <ul>
@@ -50,10 +64,21 @@ const Experience = () => {
       ];
     return(
         <section id="experience" className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32">
-        <h2 className="text-3xl py-2 text-gray-500 font-medium text-center">Experience</h2>
+        <motion.h2 initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true }} className="text-3xl py-2 text-gray-500 font-medium text-center">Experience</motion.h2>
         {experience.map((data)=>(
-          <ol className="flex flex-col md:flex-row relative border-l border-stone-300">
-            <li className="mb-10 ml-4">
+          <motion.ol className="flex flex-col md:flex-row relative border-l border-stone-300"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          viewport={{ once: true }}>
+            <li className="mb-10 ml-4"
+        
+          initial="hidden"
+          whileInView="animate"
+          viewport={{ once: true }}>
 
             <div className="absolute mt-1.5 -left-1.5 w-3 h-3 bg-stone-300 rounded-full">
               
@@ -81,7 +106,7 @@ const Experience = () => {
               </div> */}
 
             </li>
-          </ol>
+          </motion.ol>
          
           
           

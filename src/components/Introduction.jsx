@@ -1,5 +1,5 @@
 import React from "react";
-
+import {motion} from "framer-motion";
 const Introduction = () => {
 return(
 <div id="about" className="flex justify-center min-h-screen items-center">
@@ -7,18 +7,45 @@ return(
     <div className="flex flex-col md:flex-row justify-center">
       
       <div className="md:w-2/3 mx-6">
-        <h2 className=" text-gray-400 font-bold text-2xl">About Me</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
+        viewport={{ once: true }}
+       className=" text-gray-400 font-bold text-2xl">About Me</motion.h2>
    
-        <p className="text-[#cacaca] mt-4 text-[16px] leading-6">
+   <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.75 }}
+        viewport={{ once: true }}
+       className="text-[#cacaca] mt-4 text-[16px] leading-6">
        My coding journey began in high school when I stumbled upon a game development club. That's when I realized that games such as Doodle Jump and Flappy Bird, which I played on my phone often, can be created by someone simply with a laptop and a good internet connection. During my time in the club, I dove into the complexities of programming <span className="font-bold text-[#54d5bb]">2D games in Java</span>, grasping concepts like <span className="font-bold text-[#54d5bb]">motion physics</span> and <span className="font-bold text-[#54d5bb]">geometry</span>. This discovery motivated me to pursue a major in <span className="font-bold text-[#54d5bb]">computer science</span> to delve deeper into the world of programming.
        
-        </p>
-        <p className="text-[#cacaca]  mt-4 mb-8 text-[16px] leading-6">During my second year of college, I also enrolled into a full stack coding bootcamp. This  program enhanced my understanding of web development and allowed me to master advanced framworks and tools, including <span className="font-bold text-[#54d5bb]">React.js</span> in the front-end and <span className="font-bold text-[#54d5bb]">Node.js</span> for back-end services. I also learned to efficiently manage application assets and modules using <span className="font-bold text-[#54d5bb]">Webpack</span>, These key skills now enable me to develop complex, performant, and user-centric web applications, such as an eCommerce platform and social media applcation.</p>
-        <p className="text-[#cacaca]  mt-4 mb-8 text-[16px] leading-6">Beyond coding, I am also an active skateboarder. One of my favorite things to do before a coding session is to hit up my local skatepark and clear my mind with some excercise</p>
+        </motion.p>
+        <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 1 }}
+        viewport={{ once: true }}
+       className="text-[#cacaca]  mt-4 mb-8 text-[16px] leading-6">During my second year of college, I also enrolled into a full stack coding bootcamp. This  program enhanced my understanding of web development and allowed me to master advanced framworks and tools, including <span className="font-bold text-[#54d5bb]">React.js</span> in the front-end and <span className="font-bold text-[#54d5bb]">Node.js</span> for back-end services. I also learned to efficiently manage application assets and modules using <span className="font-bold text-[#54d5bb]">Webpack</span>, These key skills now enable me to develop complex, performant, and user-centric web applications, such as an eCommerce platform and social media applcation.
+       </motion.p>
+       <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 1.25 }}
+        viewport={{ once: true }}
+       className="text-[#cacaca]  mt-4 mb-8 text-[16px] leading-6">Beyond coding, I am also an active skateboarder. One of my favorite things to do before a coding session is to hit up my local skatepark and clear my mind with some excercise
+       </motion.p>
       </div>
-      <div className="md:w-1/3 flex justify-center md:justify-start mt-5">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
+        viewport={{ once: true }}
+      className="md:w-1/3 flex justify-center md:justify-start mt-5">
         <img src="profile.jpg" className="w-60 h-60 mt-10 rounded-md" alt="profileImage"/>
-      </div>
+      </motion.div>
     </div>
   </div>
 </div>
